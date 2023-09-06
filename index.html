@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="container-fluid position-fixed navigation navigation-back" data-aos="fade-down">
+        <div class="container py-3 navigation">
+            <nav class="d-flex align-items-center justify-content-between">
+                <!-- logo    -->
+                <div class="col logo">
+                    <b><a href=""><span class="c">S</span>S </a></b>
+                </div>
+                <ul class="col ml-auto justify-content-end align-items-center d-none d-md-flex">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li>
+                        <a href="#contact"><button class="talk btn">Contact</button></a>
+                    </li>
+                </ul>
+
+                <div class="menu d-block d-md-none" onclick="toggle()">
+                    <span class="btn " id="toggle-button"><i class="fas fa-bars" style="position: relative;right: 10rem;"></i></span></i>
+                </div>
+            </nav>
+            <div class="text-center py-5 menu-toggle" id="toggler" >
+                <div class="py-1"><a href="#intro">Home</a></div>
+                <div class="py-1"><a href="#about">About-Me</a></div>
+                <div class="py-1"><a href="#skill">Skills</a></div>
+                <div class="py-1"><a href="#project">Projects</a></div>
+                <div class="py-1"><a href="#contact">Contact</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- /navigation -->
+    <!-- header  -->
+    <!-- Intro -->
+    <div class="container-fluid px-5 headback py-5 header" id="intro">
+        <!-- Intro -->
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-md-6 pt-5 d-flex align-items-center" data-aos="fade-right">
+                    <div>
+                        <h1>
+                            <b>Hey....<span class="c"></span></b>
+                        </h1>
+                        <h1>
+                            I'm <span class="c"><b>Shraddha Shaiv</b></span>
+                        </h1>
+                        <p>Fresher(Web-Developer)</p>
+                        <!-- <div class="d-flex links align-items-center">
+                            <span>
+                                <a href="#" target="_black"><i
+                                        class="fab fa-github"></i></a></span>
+                            <span>
+                                <a href="#" target="_black"><i class="fab fa-linkedin-in"></i></a></span>
+
+                        </div> -->
+
+                        <div class="download_CV">
+                            <span><a href="./CV.pdf">Download CV</a></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 pt-5 d-flex align-items-end justify-content-center">
+                    <div class="profile-container" data-aos="fade-down">
+                        <img class="profile" src="./images/background.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Intro -->
+    <!-- /header  -->
+    <!-- about  -->
+    
+    <div id="about">
+        <div class="container">
+            <div class="about_box">
+                <div class="about-col-1">
+                    <img src="./images/shraddha_resumePic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <ul >
+                        <li>I'm Shraddha Shaiv</li>
+                        <li>From Dewas (M.P)</li>
+                        <li>B.Tech (CSE) Student</li>
+                        <li>Sri Aurobindo Institude of Technology , Indore</li>
+                    </ul>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FrontEnd</span><br>HTML,CSS,BOOTSTRAP</li>
+                            <li><span>Backend</span><br>Express.js , MongoDB</li>
+                            <li><span>Language</span><br>JAVA (intermediate)</li>
+                            <li><span>DATA ANALYTICS</span><br>MS-Excel</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                            <li>
+                                <span>INTERNSHIP_PROGRAMMING
+                            </li>
+                            <li><span>MSME IGTR - (JAVA , PYTHON)</span><br>Location - Indore , 11july - 8Aug</li>
+                            <li>
+                                <span>INTERNPE - (WEB DEVELOPMENT)</span><br>Duration : 1-month , Mode : online , July -
+                                23
+                            </li>
+
+                            <li>
+                                <span>TechnoHacks - (WEB DEVELOPMENT)</span><br><br>Duration : 1-month , Mode : online ,
+                                July - 23
+                            </li>
+
+                            <li>
+                                <span>Sync - (WEB DEVELOPMENT)</span><br><br>Duration : 1-month , Mode : online , July -
+                                23
+                            </li>
+
+                            <li>
+                                <span>CodeClause - (WEB DEVELOPMENT)</span><br><br>Duration : 1-month , Mode : online ,
+                                July - 23
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Sri Aurobindo Institude of Technology , Indore (M.P)</li>
+                            <li>B.TECH (CSE)</li>
+                            <li>CGPA-7.88</li>
+
+                        </ul>
+                        <ul>
+                            <li><span>March-2020</span><br>Padmaja Higher Secondary School, Dewas (M.P)</li>
+                            <li>12th 71.8%</li>
+                            <li>MP-BOARD</li>
+                        </ul>
+                        <ul>
+                            <li><span>March-2018</span><br>Padmaja Higher Secondary School, Dewas (M.P)</li>
+                            <li>10th 83.8%</li>
+                            <li>MP-BOARD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+    <!-- /about  -->
+    <!-- skills  -->
+    <div class="container-fluid skillback py-5" id="skill">
+        <div class="container py-5">
+            <h2 class="text-center" data-aos="fade-down">
+                <span class="heading">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                <b><span class="c">S</span>kills <span class="c">I</span> Kno<span class="c">w</span></b>
+                <span class="heading">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            </h2>
+            <div class="row text-center skills py-5 d-flex" id="skills">
+                <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4><i class="fab fa-java"></i> &nbsp;<b>Java Core</b></h4>
+                </div>
+                <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4><i class="fab fa-html5"></i>&nbsp;<b>HTML</b></h4>
+                </div>
+                <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4><i class="fab fa-css3-alt"></i>&nbsp;<b>CSS</b></h4>
+                </div>
+                <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4>
+                        <i class="fab fa-js"></i>
+                        <b>Express.js</b>
+                    </h4>
+                </div>
+               
+                <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4><b>C++</b></h4>
+                </div>
+               
+                <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4>
+                        <i class="fab fa-bootstrap"></i>
+                        <b>Bootstrap</b>
+                    </h4>
+                </div>
+                <!-- <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4>
+                        <i class="fab fa-java"></i>
+                        <b>Java Core</b>
+                    </h4>
+                </div> -->
+                <!-- <div class="col-lg-2 col-md-3 my-3 d-lg-block d-none"></div> -->
+                <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4>
+                        <b>Mongo DB</b>
+                    </h4>
+                </div>
+                <div class="col-lg-2 my-3 col-md-3 mx-auto" data-aos="fade-down">
+                    <h4>
+                        <b>Data Analysis</b>
+                    </h4>
+                </div>
+                <div class="col-lg-2 my-3 col-md-3 d-lg-block d-none"></div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /skills  -->
+    <!-- projects  -->
+    <div class="container-fluid projects py-5" id="project">
+        <div class="container py-5">
+            <h2 class="text-center" data-aos="fade-down">
+                <span class="heading">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                <b><span class="c">P</span>rojects</b>
+                <span class="heading">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            </h2>
+            <div class="row py-5">
+                <div class="col-lg-3 py-3" data-aos="fade-down">
+                    <div class="cards">
+                        <div class="p-2 text-center" style="position: relative;right: 6rem;">
+                            <img src="images/edu-on.png" width="100%" alt="" />
+                            <br />
+                            <br />
+                            &nbsp; &nbsp;&nbsp; &nbsp;
+                            <h5>
+                                <b><span class="c">E</span>du-on</b> &nbsp;
+                                <a href="#" target="_black"><i
+                                        class="fas fa-link"></i></a>
+                            </h5>
+                            <p>
+                                Online Learning website.
+                            </p>
+                            <p>html css js express.js</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 py-3" data-aos="fade-down">
+                    <div class="cards">
+                        <div class="p-2 text-center" style="position: relative;right: 4rem;">
+                            <img src="images/restro.png" width="100%" alt="" />
+                            <br />
+                            <br />
+                            &nbsp; &nbsp;&nbsp; &nbsp;
+                            <h5>
+                                <b><span class="c">R</span>estro </b> &nbsp;
+                                <a href="#" target="_black"><i
+                                        class="fas fa-link"></i></a>
+                            </h5>
+                            <p>Restaurant  Page FrontEnd</p>
+                            <p>Using Html Css Js</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 py-3" data-aos="fade-down">
+                    <div class="cards">
+                        <div class="p-2 text-center" style="position: relative;right:3rem;">
+                            <img src="images/musa.png" width="100%"  />
+                            <br />
+                            <br />
+                            &nbsp; &nbsp;&nbsp; &nbsp;
+                            <h5>
+                                <b><span class="c">M</span>usic website</b> &nbsp;
+                                <a href="#" target="_black"><i
+                                        class="fas fa-link"></i></a>
+                            </h5>
+                            <p>Listen and keep calm your mood</p>
+                            <p>html css Js</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 py-3" data-aos="fade-down">
+                    <div class="cards">
+                        <div class="p-2 text-center" style="position: relative;right:3rem;">
+                            <img src="images/resume_web.png" width="100%" >
+                            <br />
+                            <br />
+                            &nbsp; &nbsp;&nbsp; &nbsp;
+                            <h5 >
+                                <b><span class="c">R</span>esume website</b> &nbsp;
+                                <a href="#" target="_black"><i
+                                        class="fas fa-link"></i></a>
+                            </h5>
+                            <p>
+                                Know Me Through It
+                            </p>
+                            <p>html css Js</p>
+                        </div>
+                    </div>
+                </div>
+
+    <div class="container-fluid py-5 contactus" id="contact">
+        <div class="container py-5">
+            <h2 class="text-center" data-aos="fade-down">
+                <span class="heading">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                <b><span class="c">C</span>ontact</b>
+                <span class="heading">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+            </h2>
+            <div class="contact-left">
+                <h1 class="span">Contact Me</h1>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #ff004f
+                            }
+                        </style>
+                        <path
+                            d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z" />
+                    </svg>shraddhashaiv@gmail.com</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                            svg {
+                                fill: #ff004f
+                            }
+                        </style>
+                        <path
+                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                    </svg>6260838298</p>
+                <div class="social-icons">
+                    <a href="https://github.com/sshaiv"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                            viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #ababab
+                                }
+                            </style>
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/shraddha-shaiv-372387272"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #ababab
+                                }
+                            </style>
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                        </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #ababab
+                                }
+                            </style>
+                            <path
+                                d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z" />
+                        </svg></a>
+                    <a href="mailto:shraddhashaiv@gmail.com?subject=Contact%20Inquiry"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #ababab
+                                }
+                            </style>
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                        </svg></a>
+                </div>
+                <a href="./CV.pdf" download class="btn btn2" style="background-color:#ff004f;color:#fff;margin-top: 3rem;">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <a href="mailto:shraddhashaiv@gmail.com?subject=Contact%20Inquiry">
+                        <button type="button" class="btn btn2">Submit</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div class="copy text-center">
+            <p>
+                <span class="c">S</span>hraddha
+                <span class="c">S</span>haiv. My Profile Page
+                <a href=""><span class="c"></span></a>
+            </p>
+        </div>
+    </div>
+    <!-- /contact-us  -->
+
+    <!-- script  -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1800,
+        });
+    </script>
+    <script>  
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function toggle() {
+        // Toggle the 'show' class to display/hide the menu toggle content
+        const toggler = document.getElementById("toggler");
+        toggler.classList.toggle("show");
+    }
+    </script>
+  
+
+    <!-- / script  -->
+</body>
+
+</html>

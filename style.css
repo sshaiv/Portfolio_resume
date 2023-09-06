@@ -1,0 +1,654 @@
+/* ---------- font family -----------------  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;900&display=swap");
+
+/* ---------- / font family -----------------  */
+
+
+/* ---------------global-------------------- */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.green {
+    border: #ff004f solid 1px;
+    border: 50%;
+}
+
+.heading {
+    text-decoration: line-through;
+    text-decoration-color: #ff004f;
+}
+
+p {
+    font-size: 1.15em;
+}
+
+.c {
+    color:#ff004f;
+}
+
+.menu {
+    animation: example 7s eas;
+}
+
+@keyframes example {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 50px;
+    }
+}
+
+
+/* ---------------/ global-------------------- */
+
+
+/* --------------------------navigation ----------------------- */
+
+.navigation-back {
+    background-color: rgb(36, 32, 32) !important;
+    z-index: 100;
+}
+
+.navigation nav a:hover {
+    color: #ff004f;
+}
+
+.navigation .logo {
+    font-size: 2rem;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.navigation .talk {
+    border: #ff004f solid 1px !important;
+    border-radius: 0px;
+    color: #ff004f;
+    border: none;
+    padding: 5px 10px;
+}
+
+.navigation .talk:hover {
+    background-color:#ff004f;
+    color: white;
+}
+
+.navigation .menu i {
+    font-size: 25px;
+    color: white;
+}
+
+.navigation #toggler a:hover {
+    color:#ff004f;
+}
+
+.navigation .menu i:hover {
+    color:#ff004f;
+}
+
+
+/* --------------------------/ navigation ----------------------- */
+
+
+/* -----------------header------------------- */
+
+.headback {
+    background-color: black;
+}
+
+.header .profile-container {
+    width: 100%;
+}
+
+.header .profile {
+    /* border-radius: 50%; */
+    width: 100%;
+}
+
+.header .links span {
+    margin: 0px 10px;
+}
+
+.header .links i {
+    font-size: 25px;
+}
+
+.header .links span i:hover {
+    color: #ff004f;
+}
+.download_CV span{
+    background-color:#ff004f;
+    padding: 1rem;
+   position: relative;
+   top: 5rem;
+   left: 3rem;
+}
+
+/* -----------------/ header------------------- */
+
+
+/* --------------------about -------------------- */
+
+#about{
+   background-color:black;
+    height: 45rem;
+  padding: 5rem;
+ }
+.container img{
+    height: 25rem;
+    width: 20rem;
+    position: relative;
+    left: 4rem;
+    top: 3rem;
+   
+}
+
+.About-col-1{
+    flex-basis:35%;
+}
+.About-col-1 img{
+    position: relative;
+    top: 8rem;
+    height: 35rem;
+    width: 25rem;
+    border-radius: 15px;
+}
+.About-col-2{
+    flex-basis: 35%;
+    position: relative;
+}
+.about-col-2 h1{
+    color:#ff004f;
+    position: relative;
+    left: 2rem;
+    margin-bottom: 2rem;
+}
+.about_box{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    position: relative; 
+    
+}
+.sub-title{
+    font-size: 40px;
+    color:#fff;
+}
+
+.About-col-2 ul li{
+    position: relative;
+    top: 2rem;
+    font-size: 1.25rem;
+    color:gray;
+
+}
+.tab-titles{
+    display: flex;
+    margin:30px 0 40px;
+    position: relative;
+    top: 2rem;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:#ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.tab-contents ul li span{
+    font-size: 18px;
+    color:#ff004f;
+}
+.tab-contents{
+    display: none;
+    position: relative;
+    right: 2rem;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+
+/* * --------------------/about -------------------- */
+
+
+/* -----------------------skills ---------------------- */
+
+#skills h4:hover {
+    color:#ff004f;
+}
+
+.skillback {
+    background-color: black;
+}
+
+
+/* -----------------------/ skills ---------------------- */
+
+
+/* ----------------------------Projects ----------------------- */
+
+.projects {
+    background-color: black ;
+}
+.projects h5{
+    position: relative;
+    left: 5rem;
+}
+.projects .cards {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.projects p {
+    font-size: 0.8em;
+    position: relative;
+    left: 5rem;
+}
+
+.projects .fas:hover {
+    color:#ff004f;
+}
+
+.projects .more {
+    border:#ff004f solid 1px !important;
+    border-radius: 0px;
+    color:#ff004f;
+    border: none;
+    padding: 5px 10px;
+}
+
+.projects .more:hover {
+    background-color: #ff004f;
+    color: white;
+}
+.cards img{
+    height: 3rem;
+    
+}
+
+/* ----------------------------/ Projects ----------------------- */
+
+
+/* ------------------------------Contact us ----------------------- */
+.contact-right{
+    flex-basis: 60%;
+    width: 40rem;
+    position: relative;
+    bottom:15rem;
+    left: 40rem;
+    margin-right: 5rem;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#262626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius:6px;
+
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    color:#fff;
+   background-color:#ff004f;
+}
+
+.contact-left
+{
+    position: relative;
+    top: 5rem;
+    width: 20rem;
+    flex-basis:35% ;
+}
+
+.contact-left p{
+    margin-top: 30px;
+   
+    
+}
+.contact-left p svg{
+    margin-right: 15px;
+    position: relative;
+    right: 1rem;
+}
+.social-icons a svg{
+    margin-right: 20px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.contactus {
+    background-color: black ;
+}
+
+
+
+/* ------------------------------/Contact us ----------------------- */
+
+
+/* media query  */
+
+.navigation .menu-toggle {
+    display: none;
+}
+
+@media only screen and (min-width: 608px) {
+    .navigation #toggler {
+        display: none !important;
+    }
+    .about-col-2{
+        width: 60%;
+    }
+}
+
+
+/* / media query  */
+
+@media (max-width: 767px) {
+    /* Hide the regular navigation items on small screens */
+    .d-md-flex {
+        display: none !important;
+    }
+
+    /* Show the menu button */
+    .d-md-none {
+        display: block !important;
+    }
+
+    /* Hide the menu toggle initially on small screens */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Show the menu toggle when the menu is toggled */
+    .menu-toggle.show {
+        display: block;
+    }
+}
+
+/* Media query for medium screens (768px to 991px width) */
+@media (min-width: 608px) and (max-width: 991px) {
+    /* Hide the regular navigation items on medium screens */
+    .d-none {
+        display: none !important;
+    }
+
+    /* Show the menu button */
+    .d-md-none {
+        display: block !important;
+    }
+
+    /* Hide the menu toggle initially on medium screens */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Show the menu toggle when the menu is toggled */
+    .menu-toggle.show {
+        display: block;
+    }
+}
+
+/* Media query for very small screens (225px width and below) */
+@media (max-width: 200px) {
+    /* Hide the regular navigation items on very small screens */
+    .d-md-flex {
+        display: none !important;
+    }
+
+    /* Show the menu button */
+    .d-md-none {
+        display: block !important;
+    }
+
+    /* Show the menu toggle initially on very small screens */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide the menu toggle when the menu is not toggled */
+    .menu-toggle:not(.show) {
+        display: none;
+    }
+}
+
+
+/* about section responsive */
+/* Existing styles for larger screens */
+
+#about {
+    background-color: black;
+    height: 45rem;
+    padding: 5rem;
+}
+
+.container img {
+    height: 12rem;
+    width: 20rem;
+    position: relative;
+    left: 4rem;
+    top: 3rem;
+}
+
+.About-col-1 {
+    flex-basis: 35%;
+}
+
+.About-col-1 img {
+    position: relative;
+    top: 8rem;
+    height: 35rem;
+    width: 25rem;
+    border-radius: 15px;
+}
+
+.About-col-2 {
+    flex-basis: 35%;
+    position: relative;
+}
+
+/* New styles for smaller screens (responsive) */
+@media (max-width: 768px) {
+    #about {
+        height: auto;
+        padding: 3rem;
+    }
+
+    .container img {
+        width: 100%; /* Image responsive banane ke liye width set karein */
+        height: auto; /* Aspect ratio maintain karne ke liye */
+        position: static; /* Position reset karein */
+    }
+
+    .About-col-1 img {
+        top: 0; /* Position reset karein */
+        width: 100%; /* Image responsive banane ke liye width set karein */
+        height: auto; /* Aspect ratio maintain karne ke liye */
+    }
+
+    .About-col-2 {
+        flex-basis: 100%; /* Chhote screens ke liye full width set karein */
+        margin-top: 2rem; /* Spacing ke liye margin add karein */
+    }
+
+    .about-col-2 h1 {
+        font-size: 28px; /* Chhote screens ke liye font size kam karein */
+        margin-left: 0; /* Margin reset karein */
+    }
+
+    .About-col-2 ul li {
+        font-size: 18px; /* Chhote screens ke liye font size kam karein */
+    }
+
+    .tab-titles {
+        margin: 20px 0; /* Spacing ke liye margin badhayein */
+    }
+
+    .tab-links {
+        font-size: 20px; /* Behtar readability ke liye font size badhayein */
+        margin-right: 20px;
+    }
+}
+
+/* Base Styles */
+.contact-right {
+    flex-basis: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-right: 0;
+}
+
+.contact-left {
+    width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.contact-left p {
+    margin-top: 15px;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .contact-right {
+        flex-basis: 100%;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    
+    .contact-left {
+        width: 100%;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    
+    .contact-left p {
+        margin-top: 15px;
+    }
+    
+    .social-icons {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+/* contact section responsive */
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-right {
+        flex-basis: 60%;
+        width: 40rem;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    
+    .contact-left {
+        width: 35%;
+        flex-basis: 35%;
+        text-align: left;
+    }
+    
+    .contact-left p {
+        margin-top: 0;
+    }
+    
+    .social-icons {
+        text-align: left;
+        margin-top: 0;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .contact-right {
+        flex-basis: 60%;
+        width: 40rem;
+        position: relative;
+        bottom: 15rem;
+        left: 40rem;
+        margin-right: 5rem;
+        margin-top: 0;
+    }
+    
+    .contact-left {
+        width: 35%;
+        flex-basis: 35%;
+        text-align: left;
+    }
+    
+    .contact-left p {
+        margin-top: 0;
+    }
+    
+    .social-icons {
+        text-align: left;
+        margin-top: 0;
+    }
+}
